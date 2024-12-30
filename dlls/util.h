@@ -447,6 +447,10 @@ extern DLL_GLOBAL int			g_Language;
 #define SF_PUSH_BREAKABLE		128
 
 #define SF_LIGHT_START_OFF		1
+// enable expanded (expensive!) lightstyle pattern; 
+// if there is an on or off pattern, and light starts off, it will still use it for
+// those states regardless.
+#define SF_LIGHT_EXPATTERN		2
 
 #define SPAWNFLAG_NOMESSAGE	1
 #define SPAWNFLAG_NOTOUCH	1
